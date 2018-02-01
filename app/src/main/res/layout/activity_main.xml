@@ -71,28 +71,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <RadioButton
+            android:id="@+id/q1Answer1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Christopher Nolan"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:paddingLeft="16dp"/>
+            android:paddingLeft="16dp" />
 
         <RadioButton
+            android:id="@+id/q1Answer2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Jonathan Nolan"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
-            android:paddingLeft="16dp"/>
+            android:paddingLeft="16dp" />
 
         <RadioButton
+            android:id="@+id/q1Answer3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Simon Arrowhead"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
-            android:paddingLeft="16dp"/>
+            android:paddingLeft="16dp" />
 
     </RadioGroup>
 
@@ -126,6 +129,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <RadioButton
+            android:id="@+id/q2Answer1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="November 7, 2013"
@@ -134,6 +138,7 @@
             android:paddingLeft="16dp"/>
 
         <RadioButton
+            android:id="@+id/q2Answer2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="November 7, 2012"
@@ -142,6 +147,7 @@
             android:paddingLeft="16dp"/>
 
         <RadioButton
+            android:id="@+id/q2Answer3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="November 7, 2014"
@@ -180,6 +186,7 @@
 
 
         <CheckBox
+            android:id="@+id/checkbox1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Matthew McConaughey"
@@ -188,6 +195,7 @@
             android:paddingLeft="16dp"/>
 
         <CheckBox
+            android:id="@+id/checkbox2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mackenzie Foy"
@@ -196,6 +204,7 @@
             android:paddingLeft="16dp"/>
 
         <CheckBox
+            android:id="@+id/checkbox3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Edward Norton"
@@ -232,6 +241,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <RadioButton
+            android:id="@+id/q4Answer1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="John Murphy"
@@ -240,6 +250,7 @@
             android:paddingLeft="16dp"/>
 
         <RadioButton
+            android:id="@+id/q4Answer2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hans Zimmer"
@@ -248,6 +259,7 @@
             android:paddingLeft="16dp"/>
 
         <RadioButton
+            android:id="@+id/q4Answer3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Simon Arrowhead"
@@ -256,7 +268,10 @@
             android:paddingLeft="16dp"/>
 
     </RadioGroup>
+
+
     <TextView
+        android:id="@+id/results"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=" "
@@ -272,6 +287,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:layout_gravity="center_horizontal"
+        android:onClick="printResults"
         android:text="Submit your answers"/>
 
 </LinearLayout>
